@@ -1,0 +1,113 @@
+body {
+	font-family: sans-serif;
+	background: #181818;
+	color: #f0f0f0;
+}
+
+.container {
+	max-width: 40em;
+	margin: 1em auto;
+	background: #222;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+.group {
+	display: flex;
+	margin-bottom: 1em;
+	border: 0.1em solid #999;
+	border-radius: .5em;
+	padding: .5em;
+	flex-wrap: wrap;
+}
+
+.groupHeader {
+	width: 100%;
+	display: flex;
+	background: #1d1d1d;
+}
+
+.controls {
+	width: 60%;
+	margin-top: .2em;
+}
+
+.timerSets {
+	width: 40%;
+}
+
+.control {
+	display: flex;
+	margin-bottom: .5em;
+}
+
+.timer-set {
+	background: #1f1f1f;
+}
+
+.timerHeader {
+	display: flex;
+}
+
+.internalBorder {
+	border: 0.08em solid #666;
+	border-radius: 0.5em;
+	margin: .2em;
+	padding: .5em;
+}
+
+.closeBtn {
+	flex: none;
+	margin-left: auto;
+}
+
+#alarmLog {
+	width: 100%;
+	white-space: pre;
+	font-family: monospace;
+	background: #222;
+	color: #f0f0f0;
+	resize: none;
+	margin-block: .5em
+}
+
+input, button {
+	background: #282828;
+	color: #f0f0f0;
+	border: 0.1em solid #444;
+	border-radius: 0.25em;
+	flex: 1;
+	margin-left: .5em;
+	margin-right: .5em;
+}
+
+input[type="number"] {
+	max-width: 2em; 
+}
+
+label {
+	font-size: .8em;
+	flex: 1;	
+	align-content: flex-end;
+}
+
+/* Remove number input spinners */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+input:focus, button:focus {
+	outline: 0.2em solid #555;
+}
+button {
+	cursor: pointer;
+	transition: background 0.2s;
+}
+button:hover {
+	background: #333;
+}
